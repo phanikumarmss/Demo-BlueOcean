@@ -10,7 +10,7 @@ pipeline {
         }
         stage('build2') {
           steps {
-            sh 'echo welcome2'
+            sh 'echo papajohns'
           }
         }
       }
