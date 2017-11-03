@@ -18,7 +18,7 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh 'echo welcome end'
+        sh 'echo welcome end 123'
       }
     }
   }
