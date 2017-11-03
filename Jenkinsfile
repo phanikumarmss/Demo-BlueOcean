@@ -11,6 +11,8 @@ pipeline {
         stage('build2') {
           steps {
             sh 'echo papajohns'
+            sleep 10
+            retry(count: 10)
           }
         }
       }
