@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('BuildGroup') {
       parallel {
-        stage('') {
+        stage('error') {
           steps {
             sh 'echo welcome'
           }
@@ -11,12 +11,11 @@ pipeline {
         stage('build2') {
           steps {
             sh 'echo welcome2'
-            retry(count: 3)
           }
         }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo welcome end'
       }
